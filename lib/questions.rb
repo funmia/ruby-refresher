@@ -59,6 +59,7 @@ end
 # turn a positive integer into a negative integer. A negative integer
 # stays negative
 def make_numbers_negative(number)
+  number > 0 ? number * (-1) : number
 end
 
 # turn an array of numbers into two arrays of numbers, one an array of
@@ -86,6 +87,7 @@ end
 # add up all the numbers in an array, so [1, 3, 5, 6]
 # returns 15
 def total_of_array(array)
+  array.inject(:+)
 end
 
 # turn an array into itself repeated twice. So [1, 2, 3]
@@ -95,6 +97,7 @@ end
 
 # convert a symbol into a string
 def turn_symbol_into_string(symbol)
+  symbol.to_s
 end
 
 # get the average from an array, rounded to the nearest integer
