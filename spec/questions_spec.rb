@@ -135,7 +135,7 @@ it 'make_numbers_negative' do
     expect(n).to eq 6
   end
 
-  it 'remove_capital_letters_from_string' do
+  fit 'remove_capital_letters_from_string' do
     n = remove_capital_letters_from_string 'Hello JohnDoe'
     expect(n).to eq 'ello ohnoe'
   end
